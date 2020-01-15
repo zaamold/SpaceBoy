@@ -1,0 +1,118 @@
+/*
+My Color Palette (using Paletton!)
+Purple: #432a66
+Dark Purple: #2d174b
+Light Purple: #6b5983
+Red: #8b3048
+Dark Red: #65172a
+Blue: #284262
+Dark Blue: #162c48
+ */
+
+/* Used examples from slides to create my general setup,
+   tweaked margin, padding, and color palette, slightly changed structure */
+
+body {
+  margin: 9px 9px 0 9px;
+  padding: 0;
+  background: #2d174b;
+}
+
+#color-block {
+  background: #284262;
+}
+
+#col-left-padding {
+  margin-left: 25%;
+  padding-left: 0.5%;
+  background: #2d174b;
+}
+
+#col-right-padding {
+  margin-right: 25%;
+  padding-right: 0.5%;
+  background: #2d174b;
+}
+
+#main {
+  background: #AAA;
+  padding: 10px 10px 5px 10px;
+}
+
+/* Changed color of h2 for my name,
+   h6 for crediting images */
+h2, h6 {
+  text-align: center;
+  color: #555;
+}
+
+/* h3 is for the header of each section "Adventure, Biography, etc." */
+h3 {
+  text-align: center;
+}
+
+/* Repurposed example code from w3schools.com for navigation bar:
+https://www.w3schools.com/css/css_navbar.asp */
+
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2d174b;
+}
+
+li.menu {
+  float: left;
+}
+
+li.menu a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Changes menu "button" color when hovering */
+li.menu a:hover {
+  background-color: #432a66;
+}
+
+/* Whichever page is currently in use will be "selected"
+  and will display a different color on the menu bar */
+li.selected {
+  background-color: #6b5983;
+}
+
+/* I had the fun idea of having each character's speaking text
+   come in a different color, so I made little selectors for them
+   to make the spans' syntax quick and easy */
+
+#suzie {
+  color: #284262;
+}
+
+#jimmy {
+  color: #6b5983;
+}
+
+/* Settings for the "Space Boy" logo at the top of each page */
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 18%;
+}
+
+/* Created this so all images come in centered,
+    left height at 100% since the images are so varied,
+    it's easier to set their sizes individually */
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
